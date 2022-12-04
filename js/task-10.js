@@ -44,19 +44,17 @@ function createBoxes() {
     const index = 30 + i * 10;
 
     box.style.width = `${index}px`;
-    console.log(index);
     box.style.height = `${index}px`;
     box.style.backgroundColor = `${color}`;
-    console.log(box);
+
     markup.push(box);
   }
   boxesEl.append(...markup);
 }
 
 function deleteBoxes() {
-  //   console.dir(boxesEl.childNodes
-  // );
   const boxesCollection = boxesEl.childNodes;
+
   boxesCollection.forEach(item => {
     item.remove();
   });
@@ -64,5 +62,3 @@ function deleteBoxes() {
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
-
-// console.log(boxesEl.children)
