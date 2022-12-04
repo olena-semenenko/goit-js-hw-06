@@ -38,7 +38,7 @@ function enterNumber() {
 
 function createBoxes() {
   const markup = [];
-  for (let i = 0; i <= amount; i += 1) {
+  for (let i = 0; i < amount; i += 1) {
     const color = getRandomHexColor();
     const box = document.createElement('div');
     const index = 30 + i * 10;
