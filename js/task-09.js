@@ -20,8 +20,8 @@ function onChangeBackground() {
   const body = document.querySelector('body');
   const nameColor = document.querySelector('.color');
   const color = getRandomHexColor();
-  body.style.backgroundColor = `${color}`;
-  nameColor.textContent = `${color}`;
+  body.style.backgroundColor = color;
+  nameColor.textContent = color;
 }
 
 function getRandomHexColor() {

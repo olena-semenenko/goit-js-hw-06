@@ -53,11 +53,7 @@ function createBoxes() {
 }
 
 function deleteBoxes() {
-  const boxesCollection = boxesEl.childNodes;
-
-  boxesCollection.forEach(item => {
-    item.remove();
-  });
+  boxesEl.innerHTML = '';
 }
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
