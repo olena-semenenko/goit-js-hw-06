@@ -54,6 +54,12 @@ function createBoxes() {
 
 function deleteBoxes() {
   boxesEl.innerHTML = '';
+
+  //  const boxesCollection = boxesEl.childNodes;
+
+  // boxesCollection.forEach(item => {
+  //   item.remove();
+  // });
 }
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
