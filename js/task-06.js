@@ -17,7 +17,7 @@ formEl.addEventListener('blur', checkUserName);
 function checkUserName() {
   let userName = `${formEl.value}`;
 
-  if (userName.length > formEl.dataset.length) {
+  if (userName.length >= formEl.dataset.length) {
     formEl.classList.add('valid');
   } else formEl.classList.add('invalid');
 }
